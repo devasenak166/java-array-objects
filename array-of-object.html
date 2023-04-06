@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var gunter = {
+    name: "Gunter",
+    origin: "Adventure Time",
+    canFly: false,
+    sayHello: function () {
+      console.log("QUACK!!!");
+    }
+  };
+  
+  var ramon = {
+    name: "Ramón",
+    origin: "Happy Feet",
+    canFly: true,
+    sayHello: function () {
+      console.log("Estoy encantado de conocerle.");
+    }
+  };
+  
+  var fred = {
+    name: "Fred",
+    origin: "Sitting Ducks",
+    canFly: false,
+    sayHello: function () {
+      console.log("Hi there!");
+    },
+    
+  };
+  var myPenguin={
+      name:"Captain Cook,",
+      origin:"Mr. Popper's Penguins",
+      author:"Richard and Florence Atwater"
+        }
+  let penguins=[gunter,ramon,fred]
+  console.log(penguins)
+  console.log(penguins[0])
+  let second_penguin=penguins[1]
+  console.log(second_penguin)
+  console.log(penguins[penguins.length-1].name)
+  penguins.push(myPenguin)
+  console.log(penguins)
+  console.log(penguins.length)
+  penguins[0].canFly=true;
+  console.log(penguins[0])
+  penguins[0].sayHello();
+  for(let names in penguins){
+    console.log(penguins[names].name)
+  }
+//   for(let hello=0; hello< penguins.length; hello++){
+// console.log(penguins[hello].sayHello())
+//   }
+for(let i=0;i<penguins.length;i++){
+  penguins[i].numberOfFeet=2
+ 
+}
+console.log(penguins)
+for(let i=0;i<penguins.length;i++){
+  if(penguins[i].canFly)
+    console.log(`${penguins[i].name} can Fly!`)
+}
+</script>
+</body>
+</html>

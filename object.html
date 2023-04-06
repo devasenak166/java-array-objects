@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myPenguin={
+      name:"Captain Cook,",
+      origin:"Mr. Popper's Penguins",
+      author:"Richard and Florence Atwater"
+        }
+        console.log(`Hello, I'm a penguin and my name is ${myPenguin.name}!`)
+        myPenguin.canFly=false;
+                console.log(myPenguin)
+        myPenguin.chrip=function(){
+            console.log( "CHIRP CHIRP! Is this what penguins sound like?");
+        };
+        console.log(myPenguin.chrip())
+        myPenguin.sayHello=function(){
+            return (`Hello, I'm a penguin and my name is ${this.name}!` )
+        }
+        console.log(myPenguin.sayHello());
+        myPenguin.name="Penguin McPenguinFace"
+        console.log(myPenguin.sayHello());
+        myPenguin.fly=function(){
+            if(myPenguin.canFly==true){
+                return "I can fly!";
+            }
+            else{
+                return "No flying for me!";
+            }
+        }
+        console.log(myPenguin.fly())
+        myPenguin.canFly=true;
+        console.log(myPenguin.fly())
+        for(const key in myPenguin){
+            console.log(key);
+        }
+        for (const value in Object.values(myPenguin)){
+            console.log(value);
+        }
+        let value=Object.values(myPenguin)
+        console.log(value);
+        
+    </script>
+</body>
+</html>

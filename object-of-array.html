@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let myPenguin={
+      name:"Captain Cook,",
+      origin:"Mr. Popper's Penguins",
+      author:"Richard and Florence Atwater"
+        }
+        myPenguin.favoritesFoods=["carrot","papaya","mango"]
+        console.log(myPenguin.favoritesFoods[1])
+         console.log(myPenguin["favoritesFoods"][1])
+        let firstFavFood=myPenguin.favoritesFoods[0]
+        console.log(firstFavFood)
+        myPenguin.favoritesFoods.push("pineapple");
+        console.log(myPenguin)
+        console.log(myPenguin.favoritesFoods.length)
+        myPenguin.favoritesFoods[myPenguin.favoritesFoods.length-1]="orange"
+        console.log(myPenguin)
+
+let lastFavFood=myPenguin.favoritesFoods[myPenguin.favoritesFoods.length-1]
+console.log(lastFavFood)
+for(let i=0;i<myPenguin.favoritesFoods.length;i++){
+    console.log(myPenguin.favoritesFoods[i])
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let myPenguin={
+      name:"Captain Cook,",
+      origin:"Mr. Popper's Penguins",
+      author:"Richard and Florence Atwater"
+        }
+        myPenguin.outfit={
+          hat:"baseball cap",
+          shoes:"flip-flops",
+          shirts:"Hawaiian shirt",
+          pants:"cargo shorts"
+        }
+        let penguinHatType=myPenguin.outfit.hat
+        console.log(penguinHatType)
+        myPenguin.outfit.accessory="pocket watch";
+        console.log(myPenguin)
+        myPenguin.outfit.hat="top hat"
+        console.log(myPenguin)
+        delete myPenguin.outfit.pants
+        console.log(myPenguin)
+        for (property in myPenguin.outfit) {
+        console.log(myPenguin.outfit[property]);
+}
+
+    </script>
+</body>
+</html>
